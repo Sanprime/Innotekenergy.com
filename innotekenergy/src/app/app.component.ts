@@ -9,5 +9,13 @@ import {Router} from "@angular/router";
 export class AppComponent {
   constructor(private router: Router) {
   }
+
+  ngOnInit() {
+  }
+
   title = 'innotekenergy';
+
+  navigateToHomeScreen() {
+    this.router.navigate(['/']);
+  }
 }
